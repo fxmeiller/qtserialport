@@ -51,7 +51,7 @@
 // We mean it.
 //
 
-#include <QtCore/private/qglobal_p.h>
+#include "qserialportglobal.h"
 #include <qobject.h>
 
 typedef struct _OVERLAPPED OVERLAPPED;
@@ -60,7 +60,7 @@ QT_BEGIN_NAMESPACE
 
 class QWinOverlappedIoNotifierPrivate;
 
-class QWinOverlappedIoNotifier : public QObject
+class Q_SERIALPORT_EXPORT QWinOverlappedIoNotifier : public QObject
 {
     Q_OBJECT
     Q_DISABLE_COPY(QWinOverlappedIoNotifier)
